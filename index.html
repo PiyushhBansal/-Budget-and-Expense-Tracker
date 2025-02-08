@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2 class="app-title">💰 Budget Tracker</h2>
+        
+        <div class="input-group">
+            <input type="number" id="amount" placeholder="Amount" class="input-field">
+            <select id="currency" class="input-field">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="INR">INR</option>
+            </select>
+            <input type="text" id="category" placeholder="Category" class="input-field">
+            <button id="addExpense" class="btn-primary">Add Expense</button>
+        </div>
+
+        <div class="total-box">
+            <h3>Total Spent: <span id="totalAmount">0.00</span> <span id="selectedCurrency">EUR</span></h3>
+            <select id="convertCurrency" class="input-field">
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+                <option value="INR">INR</option>
+            </select>
+            <button id="convertTotal" class="btn-primary">Convert Total</button>
+        </div>
+
+        <h3 class="section-title">Expense History</h3>
+        <table class="expense-table">
+            <thead>
+                <tr>
+                    <th>Amount</th>
+                    <th>Currency</th>
+                    <th>Category</th>
+                    <th>Converted (EUR)</th>
+                </tr>
+            </thead>
+            <tbody id="expenseTable"></tbody>
+        </table>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

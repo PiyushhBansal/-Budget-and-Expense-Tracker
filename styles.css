@@ -1,0 +1,129 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #030919, #a777e3);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background: rgba(187, 154, 189, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.app-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.input-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #474e64;
+    outline: none;
+}
+
+.btn-primary {
+    background: #353e5d;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #606162;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(106, 142, 251, 0.3);
+}
+
+.total-box {
+    background: #1b1e87;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 201, 167, 0.2);
+}
+
+.section-title {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.expense-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.expense-table th {
+    background: #0f1836;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+.expense-table td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.expense-table tr:hover {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.insight-box {
+    background: #f0f8ff;
+    color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+.btn-delete {
+    background: #e74c3c; /* Red background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 8px 12px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.btn-delete:hover {
+    background: #c0392b; /* Darker red on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
